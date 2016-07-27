@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smarts.demodriver1c">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DemoDriver1C">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CLOSE">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.smarts.demodriver1c.CLOSE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OPEN">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.smarts.demodriver1c.OPEN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GET_PARAMETERS">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.smarts.demodriver1c.GET_PARAMETERS" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GET_VERSION">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.smarts.demodriver1c.GET_VERSION" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GET_LAST_ERROR">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.smarts.demodriver1c.GET_LAST_ERROR" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SET_PARAMETER">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.smarts.demodriver1c.SET_PARAMETER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OPEN_SESSION_RFID">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.smarts.demodriver1c.OPEN_SESSION_RFID" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CLOSE_SESSION_RFID">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.smarts.demodriver1c.CLOSE_SESSION_RFID" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GET_DATATAGS_RFID">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.smarts.demodriver1c.GET_DATATAGS_RFID" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SAVE_DATATAG_RFID">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.smarts.demodriver1c.SAVE_DATATAG_RFID" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

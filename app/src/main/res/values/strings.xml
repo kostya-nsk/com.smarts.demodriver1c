@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoDriver1C</string>
+    <string name="driver_version">1.0.1</string>
+    <string name="interface_version">1.0.1</string>
+    <string name="default_text">Данное приложение предназначено только для работы с мобильными конфигурациями 1С.</string>
+    <string name="default_error_text">Описание ошибки с локализацией.</string>
+</resources>
