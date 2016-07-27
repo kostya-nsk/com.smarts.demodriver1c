@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="СтраницыПанели" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы панели</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыПанелиРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Page name="СтраницаКоманд" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница команд</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаКомандРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<UsualGroup name="CommonGroup" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Common</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Common group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="CommonGroupРасширеннаяПодсказка" id="27"/>
+							<ChildItems>
+								<Button name="OPEN" id="1">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.DRIVER_OPEN</CommandName>
+									<ExtendedTooltip name="OPENРасширеннаяПодсказка" id="2"/>
+								</Button>
+								<Button name="GET_VERSION" id="5">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.DRIVER_GET_VERSION</CommandName>
+									<ExtendedTooltip name="GET_VERSIONРасширеннаяПодсказка" id="6"/>
+								</Button>
+								<Button name="GET_PARAMETERS" id="3">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.DRIVER_GET_PARAMETERS</CommandName>
+									<ExtendedTooltip name="GET_PARAMETERSРасширеннаяПодсказка" id="4"/>
+								</Button>
+								<Button name="SET_PARAMETER" id="20">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.DRIVER_SET_PARAMETER</CommandName>
+									<ExtendedTooltip name="SET_PARAMETERРасширеннаяПодсказка" id="21"/>
+								</Button>
+								<Button name="GET_LAST_ERROR" id="7">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.DRIVER_GET_LAST_ERROR</CommandName>
+									<ExtendedTooltip name="GET_LAST_ERRORРасширеннаяПодсказка" id="8"/>
+								</Button>
+								<Button name="CLOSE" id="9">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.DRIVER_CLOSE</CommandName>
+									<ExtendedTooltip name="CLOSEРасширеннаяПодсказка" id="10"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="RFIDGroup" id="22">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>RFID</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>RFIDGroup</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="RFIDGroupРасширеннаяПодсказка" id="23"/>
+							<ChildItems>
+								<Button name="DRIVER_OPEN_SESSION_RFID" id="24">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.RFID_OPEN_SESSION_RFID</CommandName>
+									<ExtendedTooltip name="DRIVER_OPEN_SESSION_RFIDРасширеннаяПодсказка" id="25"/>
+								</Button>
+								<Button name="RFID_GET_DATATAGS_RFID" id="28">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.RFID_GET_DATATAGS_RFID</CommandName>
+									<ExtendedTooltip name="RFID_GET_DATATAGS_RFIDРасширеннаяПодсказка" id="29"/>
+								</Button>
+								<Button name="RFID_SAVE_DATATAG_RFID" id="30">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.RFID_SAVE_DATATAG_RFID</CommandName>
+									<ExtendedTooltip name="RFID_SAVE_DATATAG_RFIDРасширеннаяПодсказка" id="31"/>
+								</Button>
+								<Button name="RFID_CLOSE_SESSION_RFID" id="32">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.RFID_CLOSE_SESSION_RFID</CommandName>
+									<ExtendedTooltip name="RFID_CLOSE_SESSION_RFIDРасширеннаяПодсказка" id="33"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаРезультатов" id="15">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница результатов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница результатов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СтраницаРезультатовРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<InputField name="Поле1" id="17">
+							<DataPath>Результаты</DataPath>
+							<Height>10</Height>
+							<ContextMenu name="Поле1КонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="Поле1РасширеннаяПодсказка" id="19"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПанельМеню</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Результаты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="DRIVER_OPEN" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>OPEN</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DRIVER OPEN</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DRIVER_OPEN</Action>
+		</Command>
+		<Command name="DRIVER_CLOSE" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>CLOSE</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DRIVER CLOSE</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DRIVER_CLOSE</Action>
+		</Command>
+		<Command name="DRIVER_GET_VERSION" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GET VERSION</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DRIVER GET VERSION</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DRIVER_GET_VERSION</Action>
+		</Command>
+		<Command name="DRIVER_GET_LAST_ERROR" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GET LAST ERROR</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DRIVER GET LAST ERROR</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DRIVER_GET_LAST_ERROR</Action>
+		</Command>
+		<Command name="DRIVER_GET_PARAMETERS" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GET PARAMETERS</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DRIVER GET PARAMETERS</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DRIVER_GET_PARAMETERS</Action>
+		</Command>
+		<Command name="DRIVER_SET_PARAMETER" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>SET PARAMETER</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DRIVER SET PARAMETER</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DRIVER_SET_PARAMETER</Action>
+		</Command>
+		<Command name="RFID_OPEN_SESSION_RFID" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>OPEN SESSION RFID</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>RFID OPEN SESSION RFID</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RFID_OPEN_SESSION_RFID</Action>
+		</Command>
+		<Command name="RFID_GET_DATATAGS_RFID" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>GET DATATAGS RFID</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>RFID GET DATATAGS RFID</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RFID_GET_DATATAGS_RFID</Action>
+		</Command>
+		<Command name="RFID_SAVE_DATATAG_RFID" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>SAVE DATATAG RFID</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>RFID SAVE DATATAG RFID</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RFID_SAVE_DATATAG_RFID</Action>
+		</Command>
+		<Command name="RFID_CLOSE_SESSION_RFID" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>CLOSE SESSION RFID</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>RFID CLOSE SESSION RFID</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>RFID_CLOSE_SESSION_RFID</Action>
+		</Command>
+	</Commands>
+</Form>

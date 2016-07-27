@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MobileApp xmlns="http://v8.1c.ru/8.3/mobile-application/app" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:bsch="http://v8.1c.ru/8.2/data/bsl" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:chm="http://v8.1c.ru/8.2/data/chart" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dl="http://v8.1c.ru/8.2/managed-application/dynamic-list" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:mf="http://v8.1c.ru/8.3/mobile-application/form" xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:role="http://v8.1c.ru/8.2/roles" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Драйвер1С" id="29b8b156-faf0-4475-b35f-76f134f6dbc6" formatVersion="1" containerID="69c7fc01-0d7b-424a-8b03-d77f6280a2b5" defaultLanguage="Language.Русский" scriptVariant="Russian">
+	<synonym>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Драйвер1С (Демо)</v8:content>
+		</v8:item>
+	</synonym>
+	<language name="Русский" id="c1b53871-a9fb-44ec-8a3c-1bf9dd4942a9" languageCode="ru">
+		<synonym>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Русский</v8:content>
+			</v8:item>
+		</synonym>
+	</language>
+	<mainModule version="1" startAddr="0">
+		<bsch:cmdOpCode>22,22</bsch:cmdOpCode>
+		<bsch:cmdOperand>0,0</bsch:cmdOperand>
+	</mainModule>
+	<sessionModule version="1">
+		<bsch:cmdOpCode>22</bsch:cmdOpCode>
+		<bsch:cmdOperand>0</bsch:cmdOperand>
+	</sessionModule>
+	<startPageWorkingArea>
+		<workingAreaTemplate>TwoColumnsEqualWidth</workingAreaTemplate>
+		<leftColumn>
+			<form>DataProcessor.ПанельМеню.Form.Форма</form>
+			<height>10</height>
+		</leftColumn>
+	</startPageWorkingArea>
+	<dataProcessor name="ПанельМеню" id="ae15ffda-6436-43bd-b6bb-f4fe8c408318">
+		<synonym>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Панель меню</v8:content>
+			</v8:item>
+		</synonym>
+		<generatedType name="DataProcessorObject.ПанельМеню" category="Object">
+			<xr:TypeId>b546ebdc-1366-4d5f-bd7d-51d653646bc4</xr:TypeId>
+			<xr:ValueId>6c6fd353-6487-4b4a-8547-03c40a00e184</xr:ValueId>
+		</generatedType>
+		<generatedType name="DataProcessorManager.ПанельМеню" category="Manager">
+			<xr:TypeId>852dfdda-345e-4d72-8458-1368d404e543</xr:TypeId>
+			<xr:ValueId>684a4796-53a8-45d6-89da-cc9ae51304b5</xr:ValueId>
+		</generatedType>
+		<managerModule version="1">
+			<bsch:cmdOpCode>22</bsch:cmdOpCode>
+			<bsch:cmdOperand>0</bsch:cmdOperand>
+		</managerModule>
+		<objectModule version="1" startAddr="0">
+			<bsch:cmdOpCode>22,22</bsch:cmdOpCode>
+			<bsch:cmdOperand>0,0</bsch:cmdOperand>
+		</objectModule>
+		<defaultForm>DataProcessor.ПанельМеню.Form.Форма</defaultForm>
+		<form name="Форма" id="068b9134-ecfc-488c-b08a-becf2870a82f">
+			<synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма</v8:content>
+				</v8:item>
+			</synonym>
+			<form>
+				<mf:serverModule version="1" startAddr="0">
+					<bsch:cmdOpCode>22,22</bsch:cmdOpCode>
+					<bsch:cmdOperand>0,0</bsch:cmdOperand>
+				</mf:serverModule>
+				<mf:clientModule version="1" startAddr="730">
+					<bsch:cmdOpCode>44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,44,1,3,18,51,16,1,3,12,4,16,1,3,7,18,21,5,1,18,19,1,1,48,49,3,12,14,16,1,3,49,16,3,15,40,3,3,16,3,8,16,1,3,12,4,24,3,12,24,18,19,1,1,39,50,3,8,16,3,8,16,1,45,39,1,106,18,19,1,1,46,1,22,22,22</bsch:cmdOpCode>
+					<bsch:cmdOperand>64,7,1,0,0,0,8,1,1,2,0,9,1,0,1,3,0,9,1,1,9,10,0,0,1,4,0,0,10,3,0,0,3,0,54,2,3,0,3,0,0,11,2,5,6,0,2,7,0,1,1,11,12,28,1,3,0,0,3,0,0,17,1,71,16,0,1,1,16,17,0,18,0,137,25,1,0,0,0,26,1,1,8,0,27,1,0,1,3,0,27,1,1,27,28,0,0,1,4,0,0,28,3,0,0,3,0,127,2,3,0,3,0,0,29,2,5,6,0,2,7,0,1,1,29,30,101,1,3,0,0,3,0,0,35,1,144,34,0,1,1,34,35,0,36,0,210,43,1,0,0,0,44,1,1,9,0,45,1,0,1,3,0,45,1,1,45,46,0,0,1,4,0,0,46,3,0,0,3,0,200,2,3,0,3,0,0,47,2,5,6,0,2,7,0,1,1,47,48,174,1,3,0,0,3,0,0,53,1,217,52,0,1,1,52,53,0,54,0,283,61,1,0,0,0,62,1,1,10,0,63,1,0,1,3,0,63,1,1,63,64,0,0,1,4,0,0,64,3,0,0,3,0,273,2,3,0,3,0,0,65,2,5,6,0,2,7,0,1,1,65,66,247,1,3,0,0,3,0,0,71,1,290,70,0,1,1,70,71,0,72,0,356,79,1,0,0,0,80,1,1,11,0,81,1,0,1,3,0,81,1,1,81,82,0,0,1,4,0,0,82,3,0,0,3,0,346,2,3,0,3,0,0,83,2,5,6,0,2,7,0,1,1,83,84,320,1,3,0,0,3,0,0,89,1,363,88,0,1,1,88,89,0,90,0,429,97,1,0,0,0,98,1,1,12,0,99,1,0,1,3,0,99,1,1,99,100,0,0,1,4,0,0,100,3,0,0,3,0,419,2,3,0,3,0,0,101,2,5,6,0,2,7,0,1,1,101,102,393,1,3,0,0,3,0,0,107,1,436,106,0,1,1,106,107,0,108,0,502,115,1,0,0,0,116,1,1,13,0,117,1,0,1,3,0,117,1,1,117,118,0,0,1,4,0,0,118,3,0,0,3,0,492,2,3,0,3,0,0,119,2,5,6,0,2,7,0,1,1,119,120,466,1,3,0,0,3,0,0,125,1,509,124,0,1,1,124,125,0,126,0,575,133,1,0,0,0,134,1,1,14,0,135,1,0,1,3,0,135,1,1,135,136,0,0,1,4,0,0,136,3,0,0,3,0,565,2,3,0,3,0,0,137,2,5,6,0,2,7,0,1,1,137,138,539,1,3,0,0,3,0,0,143,1,582,142,0,1,1,142,143,0,144,0,648,151,1,0,0,0,152,1,1,15,0,153,1,0,1,3,0,153,1,1,153,154,0,0,1,4,0,0,154,3,0,0,3,0,638,2,3,0,3,0,0,155,2,5,6,0,2,7,0,1,1,155,156,612,1,3,0,0,3,0,0,161,1,655,160,0,1,1,160,161,0,162,0,721,169,1,0,0,0,170,1,1,16,0,171,1,0,1,3,0,171,1,1,171,172,0,0,1,4,0,0,172,3,0,0,3,0,711,2,3,0,3,0,0,173,2,5,6,0,2,7,0,1,1,173,174,685,1,3,0,0,3,0,0,179,1,728,178,0,1,1,178,179,0,180,0,0,0</bsch:cmdOperand>
+					<bsch:constant>SЗапускПриложенияМобильногоУстройства</bsch:constant>
+					<bsch:constant>SДействие</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.OPEN</bsch:constant>
+					<bsch:constant>SЗапустить</bsch:constant>
+					<bsch:constant>SДополнительныеДанные</bsch:constant>
+					<bsch:constant>SКлюч</bsch:constant>
+					<bsch:constant>S - </bsch:constant>
+					<bsch:constant>SЗначение</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.CLOSE</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.GET_VERSION</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.GET_LAST_ERROR</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.GET_PARAMETERS</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.SET_PARAMETER</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.OPEN_SESSION_RFID</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.GET_DATATAGS_RFID</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.SAVE_DATATAG_RFID</bsch:constant>
+					<bsch:constant>Scom.smarts.demodriver1c.CLOSE_SESSION_RFID</bsch:constant>
+					<bsch:procedure name="DRIVER_OPEN" parametersCount="1" startAddr="0">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="Сообщить" isExternal="true" parametersCount="2" startAddr="0"/>
+					<bsch:procedure name="DRIVER_CLOSE" parametersCount="1" startAddr="73">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="DRIVER_GET_VERSION" parametersCount="1" startAddr="146">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="DRIVER_GET_LAST_ERROR" parametersCount="1" startAddr="219">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="DRIVER_GET_PARAMETERS" parametersCount="1" startAddr="292">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="DRIVER_SET_PARAMETER" parametersCount="1" startAddr="365">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="RFID_OPEN_SESSION_RFID" parametersCount="1" startAddr="438">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="RFID_GET_DATATAGS_RFID" parametersCount="1" startAddr="511">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="RFID_SAVE_DATATAG_RFID" parametersCount="1" startAddr="584">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+					<bsch:procedure name="RFID_CLOSE_SESSION_RFID" parametersCount="1" startAddr="657">
+						<bsch:variable name="Команда" isLocal="true" isParam="true"/>
+						<bsch:variable name="НовыйВызов" isLocal="true"/>
+						<bsch:variable name="Стр" isLocal="true"/>
+						<bsch:variable name="0Стр" isLocal="true"/>
+						<bsch:paramsDefValue/>
+					</bsch:procedure>
+				</mf:clientModule>
+				<mf:serverWOContextModule version="1">
+					<bsch:cmdOpCode>22</bsch:cmdOpCode>
+					<bsch:cmdOperand>0</bsch:cmdOperand>
+				</mf:serverWOContextModule>
+				<mf:clientServerWOContextModule version="1">
+					<bsch:cmdOpCode>22</bsch:cmdOpCode>
+					<bsch:cmdOperand>0</bsch:cmdOperand>
+				</mf:clientServerWOContextModule>
+				<mf:attributes>
+					<mf:attribute name="Объект">
+						<mf:type>
+							<v8:TypeId>b546ebdc-1366-4d5f-bd7d-51d653646bc4</v8:TypeId>
+						</mf:type>
+						<mf:main>true</mf:main>
+					</mf:attribute>
+					<mf:attribute name="Результаты">
+						<mf:title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Результаты</v8:content>
+							</v8:item>
+						</mf:title>
+						<mf:type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</mf:type>
+					</mf:attribute>
+				</mf:attributes>
+				<mf:command name="DRIVER_OPEN">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>OPEN</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>DRIVER_OPEN</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRIVER OPEN</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="DRIVER_CLOSE">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>CLOSE</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>DRIVER_CLOSE</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRIVER CLOSE</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="DRIVER_GET_VERSION">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GET VERSION</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>DRIVER_GET_VERSION</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRIVER GET VERSION</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="DRIVER_GET_LAST_ERROR">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GET LAST ERROR</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>DRIVER_GET_LAST_ERROR</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRIVER GET LAST ERROR</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="DRIVER_GET_PARAMETERS">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GET PARAMETERS</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>DRIVER_GET_PARAMETERS</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRIVER GET PARAMETERS</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="DRIVER_SET_PARAMETER">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>SET PARAMETER</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>DRIVER_SET_PARAMETER</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>DRIVER SET PARAMETER</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="RFID_OPEN_SESSION_RFID">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>OPEN SESSION RFID</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>RFID_OPEN_SESSION_RFID</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RFID OPEN SESSION RFID</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="RFID_GET_DATATAGS_RFID">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>GET DATATAGS RFID</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>RFID_GET_DATATAGS_RFID</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RFID GET DATATAGS RFID</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="RFID_SAVE_DATATAG_RFID">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>SAVE DATATAG RFID</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>RFID_SAVE_DATATAG_RFID</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RFID SAVE DATATAG RFID</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:command name="RFID_CLOSE_SESSION_RFID">
+					<mf:title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>CLOSE SESSION RFID</v8:content>
+						</v8:item>
+					</mf:title>
+					<mf:handlerName>RFID_CLOSE_SESSION_RFID</mf:handlerName>
+					<mf:tooltip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RFID CLOSE SESSION RFID</v8:content>
+						</v8:item>
+					</mf:tooltip>
+				</mf:command>
+				<mf:mainElement>
+					<mf:autoCommandBar name="ФормаКоманднаяПанель" type="AutoCommandBar"/>
+					<mf:group name="СтраницыПанели" type="Pages">
+						<mf:title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Страницы панели</v8:content>
+							</v8:item>
+						</mf:title>
+						<mf:group name="СтраницаКоманд" type="Page">
+							<mf:title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды</v8:content>
+								</v8:item>
+							</mf:title>
+							<mf:tooltip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница команд</v8:content>
+								</v8:item>
+							</mf:tooltip>
+							<mf:group name="CommonGroup" type="UsualGroup">
+								<mf:title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Common</v8:content>
+									</v8:item>
+								</mf:title>
+								<mf:tooltip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Common group</v8:content>
+									</v8:item>
+								</mf:tooltip>
+								<mf:usualData group="Vertical" representation="None"/>
+								<mf:button name="OPEN" type="UsualButton" commandName="Form.Command.DRIVER_OPEN"/>
+								<mf:button name="GET_VERSION" type="UsualButton" commandName="Form.Command.DRIVER_GET_VERSION"/>
+								<mf:button name="GET_PARAMETERS" type="UsualButton" commandName="Form.Command.DRIVER_GET_PARAMETERS"/>
+								<mf:button name="SET_PARAMETER" type="UsualButton" commandName="Form.Command.DRIVER_SET_PARAMETER"/>
+								<mf:button name="GET_LAST_ERROR" type="UsualButton" commandName="Form.Command.DRIVER_GET_LAST_ERROR"/>
+								<mf:button name="CLOSE" type="UsualButton" commandName="Form.Command.DRIVER_CLOSE"/>
+							</mf:group>
+							<mf:group name="RFIDGroup" type="UsualGroup">
+								<mf:title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>RFID</v8:content>
+									</v8:item>
+								</mf:title>
+								<mf:tooltip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>RFIDGroup</v8:content>
+									</v8:item>
+								</mf:tooltip>
+								<mf:usualData group="Vertical" representation="None"/>
+								<mf:button name="DRIVER_OPEN_SESSION_RFID" type="UsualButton" commandName="Form.Command.RFID_OPEN_SESSION_RFID"/>
+								<mf:button name="RFID_GET_DATATAGS_RFID" type="UsualButton" commandName="Form.Command.RFID_GET_DATATAGS_RFID"/>
+								<mf:button name="RFID_SAVE_DATATAG_RFID" type="UsualButton" commandName="Form.Command.RFID_SAVE_DATATAG_RFID"/>
+								<mf:button name="RFID_CLOSE_SESSION_RFID" type="UsualButton" commandName="Form.Command.RFID_CLOSE_SESSION_RFID"/>
+							</mf:group>
+						</mf:group>
+						<mf:group name="СтраницаРезультатов" type="Page">
+							<mf:title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница результатов</v8:content>
+								</v8:item>
+							</mf:title>
+							<mf:visible>false</mf:visible>
+							<mf:tooltip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница результатов</v8:content>
+								</v8:item>
+							</mf:tooltip>
+							<mf:pageData>
+								<mf:showTitle>false</mf:showTitle>
+							</mf:pageData>
+							<mf:field name="Поле1" kind="InputField" dataPath="Результаты">
+								<mf:contextMenu name="Поле1КонтекстноеМеню" type="ContextMenu"/>
+								<mf:inputData>
+									<mf:height>10</mf:height>
+								</mf:inputData>
+							</mf:field>
+						</mf:group>
+					</mf:group>
+				</mf:mainElement>
+			</form>
+		</form>
+	</dataProcessor>
+	<requiredPermission>
+		<permission>Multimedia</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>Location</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>Contacts</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>Calendars</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>Telephony</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>PushNotification</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>LocalNotification</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>Print</permission>
+		<use>false</use>
+	</requiredPermission>
+	<requiredPermission>
+		<permission>InAppPurchases</permission>
+		<use>false</use>
+	</requiredPermission>
+</MobileApp>
